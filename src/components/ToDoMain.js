@@ -88,12 +88,18 @@ const ToDoMain = (props) => {
             <ListItem title={expense.title} id={expense.id} active={expense.active} time={expense.time} date={expense.date} onRemoveToDo={submitRemoveToDoHandler} />)}
     </ol>;
     if (todostuffs.length === 0) renderList = <ol><li><i className="color-grey">-- add an item --</i></li></ol>;
+
+    let search = window.location.search;
+    let params = new URLSearchParams(search);
+    let queryName = params.get('name');
+    let name = "Harshil";
+    if(queryName) name = queryName;
     return (
         <div>
             <div class="wrapper">
                 <Bar showed={showed} />
                 <div class="future-cop">
-                    <h3 class="future">Harshil's</h3>
+                    <h3 class="future">{name}'s</h3>
                     <h1 class="cop">TODO</h1>
 
                 </div>

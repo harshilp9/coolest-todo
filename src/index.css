@@ -285,7 +285,6 @@ li:hover .my-remove-button {
     line-height: 1;
     margin: 0;
     margin-top: -92px;
-    padding-left: 80px;
     /* font-weight: normal; */
     background-image: -webkit-linear-gradient(#022486 0%, #0AD0FD 30%, #BDFCFC 40%, #D8FFFF 44%, #00081C 44%, #00081C 50%, #074A67 52%, #1CD8FE 60%, #7FEDFE 62%, #96F5FC 70%, #0FD8FA 73%, #0BD2FD 88%, #AFFDFF 100%);
     -webkit-background-clip: text;
