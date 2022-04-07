@@ -58,6 +58,7 @@ const ToDoMain = (props) => {
                         it.active = true;
                         audio.play();
                         setShowed(false);
+                        setTimeout(() => setShowed(true), 30000)
                     }
                 }
                 localStorage.setItem("todoList", JSON.stringify(updatedState));
