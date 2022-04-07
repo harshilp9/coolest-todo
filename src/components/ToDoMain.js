@@ -93,7 +93,7 @@ const ToDoMain = (props) => {
     let params = new URLSearchParams(search);
     let queryName = params.get('name');
     let name = "Harshil";
-    if(queryName) name = queryName;
+    if(queryName && queryName.length < 10) name = queryName;
     return (
         <div>
             <div class="wrapper">
