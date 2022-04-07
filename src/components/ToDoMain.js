@@ -53,7 +53,7 @@ const ToDoMain = (props) => {
                 let updatedState;
                 updatedState = currentState;
                 for (const it of updatedState) {
-                    if (formatAMPM(new Date()) === `${it.date} ${it.time}` && !it.active) {
+                    if (it.date && formatAMPM(new Date()) === `${it.date} ${it.time}` && !it.active) {
                         it.active = true;
                         audio.play();
                         setShowed(false);

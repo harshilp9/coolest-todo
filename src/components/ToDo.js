@@ -41,7 +41,7 @@ const ToDo = (props) => {
     return (
         <form onSubmit={submitHandler}>
             <input required type="text" value={enteredTitle} onChange={titleChangeHandler} placeholder="Enter your todo... "/><br></br>
-            <input required type="time" value={enteredDate} onChange={dateChangeHandler} placeholder="Set your time..." />
+            <input type="time" value={enteredDate} onChange={dateChangeHandler} placeholder="Set your time..." />
             <select id="cars" value={enteredTime} name="cars" onChange={timeChangeHandler}>
                 <option value="am" selected>AM</option>
                 <option value="pm">PM</option>
