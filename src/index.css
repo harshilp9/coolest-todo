@@ -220,13 +220,14 @@ li:hover .my-remove-button {
 }
 
 .future {
-  position: absolute;
-    left: 30%;
-    top: -245px;
+	position: absolute;
+    /* left: 30%; */
+    /* top: -245px; */
     font-family: 'Mr Dafoe', cursive;
     font-size: 100px;
-    margin-top: 160px;
+    /* margin-top: 160px; */
     margin-bottom: 0;
+    z-index: 223;
     color: #EB219B;
     -webkit-text-fill-color: rgba(253, 90, 250, 1);
     text-shadow: -2px -2px 0 #ffbaf2;
@@ -237,6 +238,13 @@ li:hover .my-remove-button {
     margin-left: 60px;
     padding-left: 50px;
     padding-right: 70px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    top: -59px;
 }
 
 @keyframes shockwaveJump {
