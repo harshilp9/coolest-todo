@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Bar from './bar';
 import ListItem from "./listItem";
 import ToDo from "./ToDo";
+import cassette from "./cassette.png"
 const audio = new Audio('/synthwave_ringtone.mp3');
 
 const ToDoMain = (props) => {
@@ -107,7 +108,7 @@ const ToDoMain = (props) => {
 
             <ToDo onSubmitTodo={submitToDoHandler} /><div class="center"><img onClick={() => stop()} className="hover-thumb" srcset="https://img.icons8.com/color-glass/2x/pause-squared.png 5x" alt="Pause Squared icon" loading="lazy" />
             </div>
-            {todostuffs.length > 0 && <img className="interact-with-me" onClick={unInteract} style={!interactWithMe ? { visibility: "hidden" } : { visibility: "visible" }} title="Click me to enable audio!" alt="Click me to enable audio!" src="cassette.png"></img>}
+            {todostuffs.length > 0 && <img className="interact-with-me" onClick={unInteract} style={!interactWithMe ? { visibility: "hidden" } : { visibility: "visible" }} title="Click me to enable audio!" alt="Click me to enable audio!" src={cassette}></img>}
             {renderList}
         </div>
     );
