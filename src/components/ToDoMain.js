@@ -52,8 +52,6 @@ const ToDoMain = (props) => {
             setTodoStuffs((currentState) => {
                 let updatedState;
                 updatedState = currentState;
-                console.log(currentState);
-                console.log("currentState");
                 for (const it of updatedState) {
                     if (formatAMPM(new Date()) === `${it.date} ${it.time}` && !it.active) {
                         it.active = true;
