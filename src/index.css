@@ -41,15 +41,10 @@ html {
 }
 ol {list-style: none;padding-left: 20px;width: 49%;margin:auto;text-align: center}
 
-ol li {padding: 5px;color:#dfdfdf; -webkit-animation: scale-down-animation .6s 1 ease-in-out;animation: scale-down-animation .6s 1 ease-in-out;
-	-webkit-animation-duration: .5s;animation-duration:.5s}
+ol li {padding: 5px;color:#dfdfdf;}
 
 ol li:nth-child(even){background: #f27cf90a;}
 
-@keyframes scale-down-animation {
-	0%   { opacity: 0; -webkit-transform: scale(1.1); }
-	100% { opacity: 1; -webkit-transform: scale(1); }
-  }
 .strike{text-decoration: line-through;}
 
 li:hover{
@@ -86,16 +81,14 @@ form fieldset:not(:first-of-type) {
 /*inputs*/
 form input, form select, form textarea {
 	padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: montserrat;
-    color: #ffffff;
-    background: #222222;
-    font-size: 13px;
-    border-color: #787878;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
 }
 /*buttons*/
 form .action-button {
@@ -226,7 +219,6 @@ li:hover .my-remove-button {
   text-align: center;
 }
 
-
 .future {
 	position: absolute;
     /* left: 30%; */
@@ -293,7 +285,6 @@ li:hover .my-remove-button {
     line-height: 1;
     margin: 0;
     margin-top: -92px;
-    /* padding-left: 80px; */
     /* font-weight: normal; */
     background-image: -webkit-linear-gradient(#022486 0%, #0AD0FD 30%, #BDFCFC 40%, #D8FFFF 44%, #00081C 44%, #00081C 50%, #074A67 52%, #1CD8FE 60%, #7FEDFE 62%, #96F5FC 70%, #0FD8FA 73%, #0BD2FD 88%, #AFFDFF 100%);
     -webkit-background-clip: text;

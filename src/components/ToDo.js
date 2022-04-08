@@ -14,7 +14,14 @@ const ToDo = (props) => {
             time: enteredTime
         }
 
-        // console.log(todoData);
+        if(todoData.date){
+            const hour = parseInt(todoData.date.split(":")[0]);
+            if(hour > 12) {
+                todoData["date"] = `${hour-12}:${(todoData.date.split(":")[1])}`;
+                todoData["time"] = "pm";
+            }
+        }
+
         props.onSubmitTodo(todoData);
         setenteredTitle("");
         setenteredDate("");
