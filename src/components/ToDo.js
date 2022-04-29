@@ -21,6 +21,7 @@ const ToDo = (props) => {
                 todoData["time"] = "pm";
             }
         }
+        if(todoData.date.length === 4) todoData.date = "0" + todoData.date; 
 
         props.onSubmitTodo(todoData);
         setenteredTitle("");
